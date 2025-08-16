@@ -1,5 +1,38 @@
 # Python Project
 
+<!-- Logo placeholder -->
+<p align="center">
+  <img src="https://via.placeholder.com/200x200?text=Logo" alt="Python Project Logo" width="200"/>
+</p>
+
+<!-- Badges -->
+<p align="center">
+  <a href="https://pypi.org/project/template-python-project/">
+    <img src="https://img.shields.io/pypi/v/template-python-project.svg" alt="PyPI version"/>
+  </a>
+  <a href="https://pypi.org/project/template-python-project/">
+    <img src="https://img.shields.io/pypi/pyversions/template-python-project.svg" alt="Python versions"/>
+  </a>
+  <a href="https://github.com/jamesWalczak/python-project/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/jamesWalczak/python-project.svg" alt="License"/>
+  </a>
+  <a href="https://github.com/jamesWalczak/python-project/actions">
+    <img src="https://github.com/jamesWalczak/python-project/workflows/CI/badge.svg" alt="CI Status"/>
+  </a>
+  <a href="https://codecov.io/gh/jamesWalczak/python-project">
+    <img src="https://codecov.io/gh/jamesWalczak/python-project/branch/main/graph/badge.svg" alt="Coverage"/>
+  </a>
+  <a href="https://github.com/jamesWalczak/python-project/issues">
+    <img src="https://img.shields.io/github/issues/jamesWalczak/python-project.svg" alt="Issues"/>
+  </a>
+  <a href="https://github.com/jamesWalczak/python-project/stargazers">
+    <img src="https://img.shields.io/github/stars/jamesWalczak/python-project.svg" alt="Stars"/>
+  </a>
+  <a href="https://github.com/jamesWalczak/python-project/network/members">
+    <img src="https://img.shields.io/github/forks/jamesWalczak/python-project.svg" alt="Forks"/>
+  </a>
+</p>
+
 A modern Python project template compatible with Python 3.12 and 3.13.
 
 ## Features
