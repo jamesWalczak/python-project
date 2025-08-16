@@ -1,0 +1,17 @@
+Hello {name},
+
+Welcome to {app_name}!
+
+We're excited to have you on board. Here are some quick tips to get you started:
+
+1. Check out our documentation at {docs_url}
+2. Join our community at {community_url}
+3. Follow us on social media for updates
+
+If you have any questions, feel free to reach out to our support team.
+
+Best regards,
+The {app_name} Team
+
+---
+This is an automated message. Please do not reply to this email.

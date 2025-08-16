@@ -1,0 +1,18 @@
+# Development dependencies
+pytest>=7.0
+pytest-cov
+black
+flake8
+flake8-docstrings
+flake8-bugbear
+flake8-comprehensions
+flake8-simplify
+mypy
+isort
+build
+setuptools-scm>=8.0
+pre-commit
+bandit
+pydocstyle
+pyupgrade
+types-setuptools

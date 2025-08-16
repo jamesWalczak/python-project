@@ -1,0 +1,13 @@
+# Configuration file for the Template Python project
+app_name = "Template Python Project"
+version = "1.0"
+debug = false
+
+[database]
+host = "localhost"
+port = 5432
+name = "template_python_project_db"
+
+[logging]
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

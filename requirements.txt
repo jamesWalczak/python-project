@@ -1,0 +1,7 @@
+# Production dependencies
+# Add your main project dependencies here
+
+# Example dependencies (uncomment and modify as needed):
+# requests>=2.31.0
+# click>=8.0.0
+# pydantic>=2.0.0

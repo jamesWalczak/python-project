@@ -1,0 +1,146 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "template_python_project"
+dynamic = ["version"]
+description = "A Python project template"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+maintainers = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+]
+requires-python = ">=3.12"
+dependencies = [
+    # Add your project dependencies here
+    "importlib-resources>=5.0; python_version<'3.9'",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+    "black",
+    "flake8",
+    "flake8-docstrings",
+    "flake8-bugbear",
+    "flake8-comprehensions",
+    "flake8-simplify",
+    "mypy",
+    "isort",
+    "pre-commit",
+    "bandit",
+    "pydocstyle",
+    "pyupgrade",
+    "types-setuptools",
+]
+test = [
+    "pytest>=7.0",
+    "pytest-cov",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jamesWalczak/template_python_project"
+"Bug Reports" = "https://github.com/jamesWalczak/template_python_project/issues"
+"Source" = "https://github.com/jamesWalczak/template_python_project"
+
+[project.scripts]
+template_python_project = "template_python_project.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+template_python_project = [
+    "resources/*.toml",
+    "resources/*.json",
+    "resources/*.csv",
+    "resources/*.txt",
+    "resources/*.md",
+    "resources/templates/*.sql",
+    "resources/templates/*.txt",
+    "resources/templates/*.html",
+]
+
+[tool.setuptools_scm]
+write_to = "src/template_python_project/_version.py"
+version_scheme = "post-release"
+local_scheme = "dirty-tag"
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 79
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--cov=src",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+    "--cov-report=xml",
+]
+
+[tool.pydocstyle]
+convention = "numpy"
+add_ignore = ["D100", "D104"]
+match_dir = "(?!tests|build|dist|\\.)"
+
+[tool.bandit]
+exclude_dirs = ["tests", "build", "dist"]
+skips = ["B101"]  # Skip assert_used test

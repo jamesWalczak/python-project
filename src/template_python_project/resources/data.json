@@ -1,0 +1,16 @@
+{
+  "messages": {
+    "welcome": "Welcome to Template Python Project!",
+    "goodbye": "Thank you for using Template Python Project!",
+    "error": "An error occurred. Please try again."
+  },
+  "settings": {
+    "max_retries": 3,
+    "timeout": 30,
+    "features": {
+      "feature_a": true,
+      "feature_b": false,
+      "feature_c": true
+    }
+  }
+}
